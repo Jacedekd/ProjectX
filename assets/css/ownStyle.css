@@ -1,0 +1,46 @@
+.searchMain {
+    max-width: 600px;
+    margin: 0;
+    padding: 0;
+}
+
+.inputMain {
+    height: 40px;
+    border: 1px solid #00000075;
+}
+
+.borderColor {
+    border-top: 1px solid #00000033;
+    border-bottom: 1px solid #00000009;
+}
+
+.itemBorderColor {
+    border-color: #EDEDED !important;
+}
+
+.ownNavLink {
+    margin: 0 !important;
+    font-size: 15px !important;
+}
+
+.ownNavItem {
+    width: calc(50% - 5px);
+}
+
+.ownPiskel {
+    font-size: 11px;
+    font-weight: 500;
+    color: #949494;
+    margin: 0 0 4px 0;
+    line-height: 1.33;
+}
+.ownPiskel span{
+    color: #000;
+}
+
+.ownAuthNav {
+    display: flex;
+    justify-content: center;
+    padding: 30px !important;
+    border-bottom: 1px solid #00000025;
+}
