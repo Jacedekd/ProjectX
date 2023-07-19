@@ -16,11 +16,13 @@
 
 .itemBorderColor {
     border-color: #EDEDED !important;
+    cursor: pointer;
 }
 
 .ownNavLink {
     margin: 0 !important;
     font-size: 15px !important;
+    font-weight: 300;
 }
 
 .ownNavItem {
@@ -34,7 +36,8 @@
     margin: 0 0 4px 0;
     line-height: 1.33;
 }
-.ownPiskel span{
+
+.ownPiskel span {
     color: #000;
 }
 
@@ -43,4 +46,25 @@
     justify-content: center;
     padding: 30px !important;
     border-bottom: 1px solid #00000025;
+}
+
+.sidebar {
+    background-color: #EFEFEF;
+}
+
+.ownProfileLink {
+    margin-right: 0 !important;
+}
+
+.ownProfileLink {
+    font-weight: 300;
+}
+
+.ownProfileLink:hover {
+    transform: translateX(5px);
+    margin-left: 10px;
+}
+
+.col-lg-3.sidebar {
+    padding: 0 20px 0 20px !important;
 }
