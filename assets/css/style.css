@@ -634,9 +634,12 @@ progress {
   display: inline-block;
 }
 .figure-height img {
-  width: 220px;
-  height: 135px !important;
+  width: 150px;
+  height: 85px !important;
   object-fit: contain;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
 }
 .figure-img  {
   margin-bottom: 0.5rem;
@@ -30815,13 +30818,16 @@ button:focus {
   vertical-align: -1px !important;
 }
 .language-select .dropdown-menu {
-  left: 50% !important;
-  transform: translateX(-50%) !important;
+  right: 0% !important;
+  /* transform: translateX(-50%) !important; */
   top: 100% !important;
   margin-top: 0.5rem !important;
   padding: 0.65rem 0;
   position: absolute;
-  min-width: 4rem;
+  min-width: 300px;
+  background-color: #fff;
+  box-shadow: 5px 5px 15px 0 rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(0, 0, 0, 0.05);
 }
 .share-dropdown .dropdown-menu {
   min-width: 6.25rem;
@@ -38095,7 +38101,8 @@ video.player {
   overflow-x: auto;
 }
 .items-row .item {
-  min-width: 220px;
+  min-width: 190px;
+  height: 250px;
 }
 .item figure,
 .swiper-slide figure {

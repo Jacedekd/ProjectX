@@ -22,7 +22,7 @@
       <nav class="navbar navbar-expand-lg center-nav transparent navbar-light py-4">
         <div class="container flex-lg-row flex-nowrap align-items-center">
           <div class="d-flex flex-row w-100 justify-content-between align-items-center">
-            <div class="navbar-other">
+            <div class="navbar-other ownNavbarToggle">
               <ul class="navbar-nav flex-row align-items-center">
                 <li class="nav-item d-lg-none">
                   <button class="hamburger offcanvas-nav-btn"><span></span></button>
@@ -49,19 +49,61 @@
             </ul>
             <div class="navbar-other d-flex">
               <ul class="navbar-nav flex-row align-items-center ms-auto">
-                <li class="nav-item dropdown language-select">
-                  <a class="nav-link dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                    aria-haspopup="true" aria-expanded="false"><i class="uil uil-user"></i></a>
-                  <ul class="dropdown-menu">
-                    <li class="nav-item"><a class="dropdown-item" href="#">Профиль</a></li>
-                    <li class="nav-item"><a class="dropdown-item" href="#">Заказы</a></li>
-                    <li class="nav-item"><a class="dropdown-item" href="#">Выйти</a></li>
-                  </ul>
-                </li>
                 <li class="nav-item">
                   <a class="nav-link">
                     <i class="uil uil-bell fs-24"></i>
                   </a>
+                </li>
+                <li class="nav-item dropdown language-select">
+                  <a class="nav-link dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false"><i class="uil uil-user"></i></a>
+                  <ul class="dropdown-menu ownDropdown">
+                    <li class="nav-item ownDropItem">
+                      <a class="dropdown-item" href="#"><i
+                          class="uil uil-shield pe-2 fs-25"></i>
+                          <div class="ownDropGroup">
+                            <div class="fw-bold fs-14">Профиль</div>
+                            <span>Узнайте, что является уникальным для вас</span>
+                          </div>
+                      </a>
+                      </li>
+                    <li class="nav-item ownDropItem">
+                      <a class="dropdown-item" href="#"><i
+                          class="uil uil-shopping-bag pe-2 fs-25"></i>
+                          <div class="ownDropGroup">
+                            <div class="fw-bold fs-14">Заказы</div>
+                            <span>Активные заказы, в прогрессе...</span>
+                          </div>
+                      </a>
+                      </li>
+                    <li class="nav-item ownDropItem">
+                      <a class="dropdown-item" href="#"><i
+                        class="uil uil-heart pe-2 fs-25"></i>
+                        <div class="ownDropGroup">
+                          <div class="fw-bold fs-14">Избранное</div>
+                          <span>Ваши сохраненные продукты</span>
+                        </div>
+                    </a>
+                      </li>
+                    <li class="nav-item ownDropItem">
+                      <a class="dropdown-item" href="#"><i
+                        class="uil uil-setting pe-2 fs-25"></i>
+                        <div class="ownDropGroup">
+                          <div class="fw-bold fs-14">Настройки</div>
+                          <span>Платежи, Выписки, Адреса</span>
+                        </div>
+                    </a>
+                      </li>
+                    <li class="nav-item ownDropItem">
+                      <a class="dropdown-item" href="#"><i
+                          class="uil uil-signout pe-2 fs-22"></i>
+                          <div class="ownDropGroup">
+                            <div class="fw-bold">Выйти</div>
+                            <span>Покидаете нас?</span>
+                          </div>
+                      </a>
+                      </li>
+                  </ul>
                 </li>
               </ul>
               <!-- /.navbar-nav -->
@@ -240,14 +282,15 @@
           </div>
           <div class="items-row d-flex flex-row w-100 gap-5 pb-2 overflow-scroll">
             <div class="item border p-1 itemBorderColor">
-              <figure class="rounded mb-6 figure-height">
+              <figure class="rounded mb-4 figure-height">
                 <img src="./assets/img/product/image 1.png" alt="" />
                 <span class="avatar text-black w-5 h-5 position-absolute text-uppercase" style="top: 5px; right: 5px"><i
                     class="uil uil-heart fs-26"></i>
                 </span>
               </figure>
               <div class="post-header">
-                <h2 class="post-title h3 fs-18"><a href="./shop-product.html" class="link-dark fw-normal">Nike Air Sneakers</a>
+                <h2 class="post-title h3 fs-16"><a href="./shop-product.html" class="link-dark fw-lighter">Nike Air
+                    Sneakers</a>
                 </h2>
                 <div class="post-category fw-normal">Shoes</div>
                 <p class="price fw-bold">
@@ -259,35 +302,16 @@
               </div>
               <!-- /.post-header -->
             </div>
-            <div class="item border border-gray p-1">
-              <figure class="rounded mb-6 figure-height">
+            <div class="item border border-gray p-1 itemBorderColor">
+              <figure class="rounded mb-5 figure-height">
                 <img src="./assets/img/product/image 1.png" alt="" />
                 <span class="avatar text-black w-5 h-5 position-absolute text-uppercase" style="top: 5px; right: 5px"><i
                     class="uil uil-heart fs-26"></i>
                 </span>
               </figure>
               <div class="post-header">
-                <h2 class="post-title h3 fs-18"><a href="./shop-product.html" class="link-dark fw-normal">Nike Air Sneakers</a>
-                </h2>
-                <div class="post-category fw-normal">Shoes</div>
-                <p class="price fw-bold">
-                  <span class="amount text-dark">$39.49</span>
-                  <del>
-                    <span class="amount">$78.66</span>
-                  </del>
-                </p>
-              </div>
-              <!-- /.post-header -->
-            </div>
-            <div class="item border p-1 itemBorderColor">
-              <figure class="rounded mb-6 figure-height">
-                <img src="./assets/img/product/image 1.png" alt="" />
-                <span class="avatar text-black w-5 h-5 position-absolute text-uppercase" style="top: 5px; right: 5px"><i
-                    class="uil uil-heart fs-26"></i>
-                </span>
-              </figure>
-              <div class="post-header">
-                <h2 class="post-title h3 fs-18"><a href="./shop-product.html" class="link-dark fw-normal">Nike Air Sneakers</a>
+                <h2 class="post-title h3 fs-16"><a href="./shop-product.html" class="link-dark fw-light">Nike Air
+                    Sneakers</a>
                 </h2>
                 <div class="post-category fw-normal">Shoes</div>
                 <p class="price fw-bold">
@@ -307,7 +331,8 @@
                 </span>
               </figure>
               <div class="post-header">
-                <h2 class="post-title h3 fs-18"><a href="./shop-product.html" class="link-dark fw-normal">Nike Air Sneakers</a>
+                <h2 class="post-title h3 fs-16"><a href="./shop-product.html" class="link-dark fw-light">Nike Air
+                    Sneakers</a>
                 </h2>
                 <div class="post-category fw-normal">Shoes</div>
                 <p class="price fw-bold">
@@ -327,7 +352,8 @@
                 </span>
               </figure>
               <div class="post-header">
-                <h2 class="post-title h3 fs-18"><a href="./shop-product.html" class="link-dark fw-normal">Nike Air Sneakers</a>
+                <h2 class="post-title h3 fs-16"><a href="./shop-product.html" class="link-dark fw-light">Nike Air
+                    Sneakers</a>
                 </h2>
                 <div class="post-category fw-normal">Shoes</div>
                 <p class="price fw-bold">
@@ -347,7 +373,8 @@
                 </span>
               </figure>
               <div class="post-header">
-                <h2 class="post-title h3 fs-18"><a href="./shop-product.html" class="link-dark fw-normal">Nike Air Sneakers</a>
+                <h2 class="post-title h3 fs-16"><a href="./shop-product.html" class="link-dark fw-light">Nike Air
+                    Sneakers</a>
                 </h2>
                 <div class="post-category fw-normal">Shoes</div>
                 <p class="price fw-bold">
@@ -367,7 +394,29 @@
                 </span>
               </figure>
               <div class="post-header">
-                <h2 class="post-title h3 fs-18"><a href="./shop-product.html" class="link-dark fw-normal">Nike Air Sneakers</a>
+                <h2 class="post-title h3 fs-16"><a href="./shop-product.html" class="link-dark fw-light">Nike Air
+                    Sneakers</a>
+                </h2>
+                <div class="post-category fw-normal">Shoes</div>
+                <p class="price fw-bold">
+                  <span class="amount text-dark">$39.49</span>
+                  <del>
+                    <span class="amount">$78.66</span>
+                  </del>
+                </p>
+              </div>
+              <!-- /.post-header -->
+            </div>
+            <div class="item border p-1 itemBorderColor">
+              <figure class="rounded mb-6 figure-height">
+                <img src="./assets/img/product/image 1.png" alt="" />
+                <span class="avatar text-black w-5 h-5 position-absolute text-uppercase" style="top: 5px; right: 5px"><i
+                    class="uil uil-heart fs-26"></i>
+                </span>
+              </figure>
+              <div class="post-header">
+                <h2 class="post-title h3 fs-16"><a href="./shop-product.html" class="link-dark fw-light">Nike Air
+                    Sneakers</a>
                 </h2>
                 <div class="post-category fw-normal">Shoes</div>
                 <p class="price fw-bold">
@@ -455,7 +504,8 @@
                 </span>
               </figure>
               <div class="post-header">
-                <h2 class="post-title h3 fs-18"><a href="./shop-product.html" class="link-dark fw-normal">Nike Air Sneakers</a>
+                <h2 class="post-title h3 fs-16"><a href="./shop-product.html" class="link-dark fw-light">Nike Air
+                    Sneakers</a>
                 </h2>
                 <div class="post-category fw-normal">Shoes</div>
                 <p class="price fw-bold">
@@ -475,7 +525,8 @@
                 </span>
               </figure>
               <div class="post-header">
-                <h2 class="post-title h3 fs-18"><a href="./shop-product.html" class="link-dark fw-normal">Nike Air Sneakers</a>
+                <h2 class="post-title h3 fs-16"><a href="./shop-product.html" class="link-dark fw-light">Nike Air
+                    Sneakers</a>
                 </h2>
                 <div class="post-category fw-normal">Shoes</div>
                 <p class="price fw-bold">
@@ -495,7 +546,8 @@
                 </span>
               </figure>
               <div class="post-header">
-                <h2 class="post-title h3 fs-18"><a href="./shop-product.html" class="link-dark fw-normal">Nike Air Sneakers</a>
+                <h2 class="post-title h3 fs-16"><a href="./shop-product.html" class="link-dark fw-light">Nike Air
+                    Sneakers</a>
                 </h2>
                 <div class="post-category fw-normal">Shoes</div>
                 <p class="price fw-bold">
@@ -515,7 +567,8 @@
                 </span>
               </figure>
               <div class="post-header">
-                <h2 class="post-title h3 fs-18"><a href="./shop-product.html" class="link-dark fw-normal">Nike Air Sneakers</a>
+                <h2 class="post-title h3 fs-16"><a href="./shop-product.html" class="link-dark fw-light">Nike Air
+                    Sneakers</a>
                 </h2>
                 <div class="post-category fw-normal">Shoes</div>
                 <p class="price fw-bold">
@@ -535,7 +588,8 @@
                 </span>
               </figure>
               <div class="post-header">
-                <h2 class="post-title h3 fs-18"><a href="./shop-product.html" class="link-dark fw-normal">Nike Air Sneakers</a>
+                <h2 class="post-title h3 fs-16"><a href="./shop-product.html" class="link-dark fw-light">Nike Air
+                    Sneakers</a>
                 </h2>
                 <div class="post-category fw-normal">Shoes</div>
                 <p class="price fw-bold">
@@ -555,7 +609,8 @@
                 </span>
               </figure>
               <div class="post-header">
-                <h2 class="post-title h3 fs-18"><a href="./shop-product.html" class="link-dark fw-normal">Nike Air Sneakers</a>
+                <h2 class="post-title h3 fs-16"><a href="./shop-product.html" class="link-dark fw-light">Nike Air
+                    Sneakers</a>
                 </h2>
                 <div class="post-category fw-normal">Shoes</div>
                 <p class="price fw-bold">
@@ -575,7 +630,8 @@
                 </span>
               </figure>
               <div class="post-header">
-                <h2 class="post-title h3 fs-18"><a href="./shop-product.html" class="link-dark fw-normal">Nike Air Sneakers</a>
+                <h2 class="post-title h3 fs-16"><a href="./shop-product.html" class="link-dark fw-light">Nike Air
+                    Sneakers</a>
                 </h2>
                 <div class="post-category fw-normal">Shoes</div>
                 <p class="price fw-bold">
@@ -663,7 +719,8 @@
                 </span>
               </figure>
               <div class="post-header">
-                <h2 class="post-title h3 fs-18"><a href="./shop-product.html" class="link-dark fw-normal">Nike Air Sneakers</a>
+                <h2 class="post-title h3 fs-16"><a href="./shop-product.html" class="link-dark fw-light">Nike Air
+                    Sneakers</a>
                 </h2>
                 <div class="post-category fw-normal">Shoes</div>
                 <p class="price fw-bold">
@@ -683,7 +740,8 @@
                 </span>
               </figure>
               <div class="post-header">
-                <h2 class="post-title h3 fs-18"><a href="./shop-product.html" class="link-dark fw-normal">Nike Air Sneakers</a>
+                <h2 class="post-title h3 fs-16"><a href="./shop-product.html" class="link-dark fw-light">Nike Air
+                    Sneakers</a>
                 </h2>
                 <div class="post-category fw-normal">Shoes</div>
                 <p class="price fw-bold">
@@ -703,7 +761,8 @@
                 </span>
               </figure>
               <div class="post-header">
-                <h2 class="post-title h3 fs-18"><a href="./shop-product.html" class="link-dark fw-normal">Nike Air Sneakers</a>
+                <h2 class="post-title h3 fs-16"><a href="./shop-product.html" class="link-dark fw-light">Nike Air
+                    Sneakers</a>
                 </h2>
                 <div class="post-category fw-normal">Shoes</div>
                 <p class="price fw-bold">
@@ -723,7 +782,8 @@
                 </span>
               </figure>
               <div class="post-header">
-                <h2 class="post-title h3 fs-18"><a href="./shop-product.html" class="link-dark fw-normal">Nike Air Sneakers</a>
+                <h2 class="post-title h3 fs-16"><a href="./shop-product.html" class="link-dark fw-light">Nike Air
+                    Sneakers</a>
                 </h2>
                 <div class="post-category fw-normal">Shoes</div>
                 <p class="price fw-bold">
@@ -743,7 +803,8 @@
                 </span>
               </figure>
               <div class="post-header">
-                <h2 class="post-title h3 fs-18"><a href="./shop-product.html" class="link-dark fw-normal">Nike Air Sneakers</a>
+                <h2 class="post-title h3 fs-16"><a href="./shop-product.html" class="link-dark fw-light">Nike Air
+                    Sneakers</a>
                 </h2>
                 <div class="post-category fw-normal">Shoes</div>
                 <p class="price fw-bold">
@@ -763,7 +824,8 @@
                 </span>
               </figure>
               <div class="post-header">
-                <h2 class="post-title h3 fs-18"><a href="./shop-product.html" class="link-dark fw-normal">Nike Air Sneakers</a>
+                <h2 class="post-title h3 fs-16"><a href="./shop-product.html" class="link-dark fw-light">Nike Air
+                    Sneakers</a>
                 </h2>
                 <div class="post-category fw-normal">Shoes</div>
                 <p class="price fw-bold">
@@ -783,7 +845,8 @@
                 </span>
               </figure>
               <div class="post-header">
-                <h2 class="post-title h3 fs-18"><a href="./shop-product.html" class="link-dark fw-normal">Nike Air Sneakers</a>
+                <h2 class="post-title h3 fs-16"><a href="./shop-product.html" class="link-dark fw-light">Nike Air
+                    Sneakers</a>
                 </h2>
                 <div class="post-category fw-normal">Shoes</div>
                 <p class="price fw-bold">
@@ -823,7 +886,8 @@
                 </span>
               </figure>
               <div class="post-header">
-                <h2 class="post-title h3 fs-18"><a href="./shop-product.html" class="link-dark fw-normal">Nike Air Sneakers</a>
+                <h2 class="post-title h3 fs-16"><a href="./shop-product.html" class="link-dark fw-light">Nike Air
+                    Sneakers</a>
                 </h2>
                 <div class="post-category fw-normal">Shoes</div>
                 <p class="price fw-bold">
@@ -843,7 +907,8 @@
                 </span>
               </figure>
               <div class="post-header">
-                <h2 class="post-title h3 fs-18"><a href="./shop-product.html" class="link-dark fw-normal">Nike Air Sneakers</a>
+                <h2 class="post-title h3 fs-16"><a href="./shop-product.html" class="link-dark fw-light">Nike Air
+                    Sneakers</a>
                 </h2>
                 <div class="post-category fw-normal">Shoes</div>
                 <p class="price fw-bold">
@@ -863,7 +928,8 @@
                 </span>
               </figure>
               <div class="post-header">
-                <h2 class="post-title h3 fs-18"><a href="./shop-product.html" class="link-dark fw-normal">Nike Air Sneakers</a>
+                <h2 class="post-title h3 fs-16"><a href="./shop-product.html" class="link-dark fw-light">Nike Air
+                    Sneakers</a>
                 </h2>
                 <div class="post-category fw-normal">Shoes</div>
                 <p class="price fw-bold">
@@ -883,7 +949,8 @@
                 </span>
               </figure>
               <div class="post-header">
-                <h2 class="post-title h3 fs-18"><a href="./shop-product.html" class="link-dark fw-normal">Nike Air Sneakers</a>
+                <h2 class="post-title h3 fs-16"><a href="./shop-product.html" class="link-dark fw-light">Nike Air
+                    Sneakers</a>
                 </h2>
                 <div class="post-category fw-normal">Shoes</div>
                 <p class="price fw-bold">
@@ -903,7 +970,8 @@
                 </span>
               </figure>
               <div class="post-header">
-                <h2 class="post-title h3 fs-18"><a href="./shop-product.html" class="link-dark fw-normal">Nike Air Sneakers</a>
+                <h2 class="post-title h3 fs-16"><a href="./shop-product.html" class="link-dark fw-light">Nike Air
+                    Sneakers</a>
                 </h2>
                 <div class="post-category fw-normal">Shoes</div>
                 <p class="price fw-bold">
@@ -923,7 +991,8 @@
                 </span>
               </figure>
               <div class="post-header">
-                <h2 class="post-title h3 fs-18"><a href="./shop-product.html" class="link-dark fw-normal">Nike Air Sneakers</a>
+                <h2 class="post-title h3 fs-16"><a href="./shop-product.html" class="link-dark fw-light">Nike Air
+                    Sneakers</a>
                 </h2>
                 <div class="post-category fw-normal">Shoes</div>
                 <p class="price fw-bold">
@@ -943,7 +1012,8 @@
                 </span>
               </figure>
               <div class="post-header">
-                <h2 class="post-title h3 fs-18"><a href="./shop-product.html" class="link-dark fw-normal">Nike Air Sneakers</a>
+                <h2 class="post-title h3 fs-16"><a href="./shop-product.html" class="link-dark fw-light">Nike Air
+                    Sneakers</a>
                 </h2>
                 <div class="post-category fw-normal">Shoes</div>
                 <p class="price fw-bold">
@@ -983,7 +1053,8 @@
                 </span>
               </figure>
               <div class="post-header">
-                <h2 class="post-title h3 fs-18"><a href="./shop-product.html" class="link-dark fw-normal">Nike Air Sneakers</a>
+                <h2 class="post-title h3 fs-16"><a href="./shop-product.html" class="link-dark fw-light">Nike Air
+                    Sneakers</a>
                 </h2>
                 <div class="post-category fw-normal">Shoes</div>
                 <p class="price fw-bold">
@@ -1003,7 +1074,8 @@
                 </span>
               </figure>
               <div class="post-header">
-                <h2 class="post-title h3 fs-18"><a href="./shop-product.html" class="link-dark fw-normal">Nike Air Sneakers</a>
+                <h2 class="post-title h3 fs-16"><a href="./shop-product.html" class="link-dark fw-light">Nike Air
+                    Sneakers</a>
                 </h2>
                 <div class="post-category fw-normal">Shoes</div>
                 <p class="price fw-bold">
@@ -1023,7 +1095,8 @@
                 </span>
               </figure>
               <div class="post-header">
-                <h2 class="post-title h3 fs-18"><a href="./shop-product.html" class="link-dark fw-normal">Nike Air Sneakers</a>
+                <h2 class="post-title h3 fs-16"><a href="./shop-product.html" class="link-dark fw-light">Nike Air
+                    Sneakers</a>
                 </h2>
                 <div class="post-category fw-normal">Shoes</div>
                 <p class="price fw-bold">
@@ -1043,7 +1116,8 @@
                 </span>
               </figure>
               <div class="post-header">
-                <h2 class="post-title h3 fs-18"><a href="./shop-product.html" class="link-dark fw-normal">Nike Air Sneakers</a>
+                <h2 class="post-title h3 fs-16"><a href="./shop-product.html" class="link-dark fw-light">Nike Air
+                    Sneakers</a>
                 </h2>
                 <div class="post-category fw-normal">Shoes</div>
                 <p class="price fw-bold">
@@ -1063,7 +1137,8 @@
                 </span>
               </figure>
               <div class="post-header">
-                <h2 class="post-title h3 fs-18"><a href="./shop-product.html" class="link-dark fw-normal">Nike Air Sneakers</a>
+                <h2 class="post-title h3 fs-16"><a href="./shop-product.html" class="link-dark fw-light">Nike Air
+                    Sneakers</a>
                 </h2>
                 <div class="post-category fw-normal">Shoes</div>
                 <p class="price fw-bold">
@@ -1083,7 +1158,8 @@
                 </span>
               </figure>
               <div class="post-header">
-                <h2 class="post-title h3 fs-18"><a href="./shop-product.html" class="link-dark fw-normal">Nike Air Sneakers</a>
+                <h2 class="post-title h3 fs-16"><a href="./shop-product.html" class="link-dark fw-light">Nike Air
+                    Sneakers</a>
                 </h2>
                 <div class="post-category fw-normal">Shoes</div>
                 <p class="price fw-bold">
@@ -1103,7 +1179,8 @@
                 </span>
               </figure>
               <div class="post-header">
-                <h2 class="post-title h3 fs-18"><a href="./shop-product.html" class="link-dark fw-normal">Nike Air Sneakers</a>
+                <h2 class="post-title h3 fs-16"><a href="./shop-product.html" class="link-dark fw-light">Nike Air
+                    Sneakers</a>
                 </h2>
                 <div class="post-category fw-normal">Shoes</div>
                 <p class="price fw-bold">
@@ -1192,7 +1269,8 @@
               </span>
             </figure>
             <div class="post-header">
-              <h2 class="post-title h3 fs-18"><a href="./shop-product.html" class="link-dark fw-normal">Nike Air Sneakers</a>
+              <h2 class="post-title h3 fs-16"><a href="./shop-product.html" class="link-dark fw-light">Nike Air
+                  Sneakers</a>
               </h2>
               <div class="post-category fw-normal">Shoes</div>
               <p class="price fw-bold">
@@ -1212,7 +1290,8 @@
               </span>
             </figure>
             <div class="post-header">
-              <h2 class="post-title h3 fs-18"><a href="./shop-product.html" class="link-dark fw-normal">Nike Air Sneakers</a>
+              <h2 class="post-title h3 fs-16"><a href="./shop-product.html" class="link-dark fw-light">Nike Air
+                  Sneakers</a>
               </h2>
               <div class="post-category fw-normal">Shoes</div>
               <p class="price fw-bold">
@@ -1232,7 +1311,8 @@
               </span>
             </figure>
             <div class="post-header">
-              <h2 class="post-title h3 fs-18"><a href="./shop-product.html" class="link-dark fw-normal">Nike Air Sneakers</a>
+              <h2 class="post-title h3 fs-16"><a href="./shop-product.html" class="link-dark fw-light">Nike Air
+                  Sneakers</a>
               </h2>
               <div class="post-category fw-normal">Shoes</div>
               <p class="price fw-bold">
@@ -1252,7 +1332,8 @@
               </span>
             </figure>
             <div class="post-header">
-              <h2 class="post-title h3 fs-18"><a href="./shop-product.html" class="link-dark fw-normal">Nike Air Sneakers</a>
+              <h2 class="post-title h3 fs-16"><a href="./shop-product.html" class="link-dark fw-light">Nike Air
+                  Sneakers</a>
               </h2>
               <div class="post-category fw-normal">Shoes</div>
               <p class="price fw-bold">
@@ -1272,7 +1353,8 @@
               </span>
             </figure>
             <div class="post-header">
-              <h2 class="post-title h3 fs-18"><a href="./shop-product.html" class="link-dark fw-normal">Nike Air Sneakers</a>
+              <h2 class="post-title h3 fs-16"><a href="./shop-product.html" class="link-dark fw-light">Nike Air
+                  Sneakers</a>
               </h2>
               <div class="post-category fw-normal">Shoes</div>
               <p class="price fw-bold">
@@ -1292,7 +1374,8 @@
               </span>
             </figure>
             <div class="post-header">
-              <h2 class="post-title h3 fs-18"><a href="./shop-product.html" class="link-dark fw-normal">Nike Air Sneakers</a>
+              <h2 class="post-title h3 fs-16"><a href="./shop-product.html" class="link-dark fw-light">Nike Air
+                  Sneakers</a>
               </h2>
               <div class="post-category fw-normal">Shoes</div>
               <p class="price fw-bold">
@@ -1312,7 +1395,8 @@
               </span>
             </figure>
             <div class="post-header">
-              <h2 class="post-title h3 fs-18"><a href="./shop-product.html" class="link-dark fw-normal">Nike Air Sneakers</a>
+              <h2 class="post-title h3 fs-16"><a href="./shop-product.html" class="link-dark fw-light">Nike Air
+                  Sneakers</a>
               </h2>
               <div class="post-category fw-normal">Shoes</div>
               <p class="price fw-bold">
@@ -1352,7 +1436,8 @@
               </span>
             </figure>
             <div class="post-header">
-              <h2 class="post-title h3 fs-18"><a href="./shop-product.html" class="link-dark fw-normal">Nike Air Sneakers</a>
+              <h2 class="post-title h3 fs-16"><a href="./shop-product.html" class="link-dark fw-light">Nike Air
+                  Sneakers</a>
               </h2>
               <div class="post-category fw-normal">Shoes</div>
               <p class="price fw-bold">
@@ -1372,7 +1457,8 @@
               </span>
             </figure>
             <div class="post-header">
-              <h2 class="post-title h3 fs-18"><a href="./shop-product.html" class="link-dark fw-normal">Nike Air Sneakers</a>
+              <h2 class="post-title h3 fs-16"><a href="./shop-product.html" class="link-dark fw-light">Nike Air
+                  Sneakers</a>
               </h2>
               <div class="post-category fw-normal">Shoes</div>
               <p class="price fw-bold">
@@ -1392,7 +1478,8 @@
               </span>
             </figure>
             <div class="post-header">
-              <h2 class="post-title h3 fs-18"><a href="./shop-product.html" class="link-dark fw-normal">Nike Air Sneakers</a>
+              <h2 class="post-title h3 fs-16"><a href="./shop-product.html" class="link-dark fw-light">Nike Air
+                  Sneakers</a>
               </h2>
               <div class="post-category fw-normal">Shoes</div>
               <p class="price fw-bold">
@@ -1412,7 +1499,8 @@
               </span>
             </figure>
             <div class="post-header">
-              <h2 class="post-title h3 fs-18"><a href="./shop-product.html" class="link-dark fw-normal">Nike Air Sneakers</a>
+              <h2 class="post-title h3 fs-16"><a href="./shop-product.html" class="link-dark fw-light">Nike Air
+                  Sneakers</a>
               </h2>
               <div class="post-category fw-normal">Shoes</div>
               <p class="price fw-bold">
@@ -1432,7 +1520,8 @@
               </span>
             </figure>
             <div class="post-header">
-              <h2 class="post-title h3 fs-18"><a href="./shop-product.html" class="link-dark fw-normal">Nike Air Sneakers</a>
+              <h2 class="post-title h3 fs-16"><a href="./shop-product.html" class="link-dark fw-light">Nike Air
+                  Sneakers</a>
               </h2>
               <div class="post-category fw-normal">Shoes</div>
               <p class="price fw-bold">
@@ -1452,7 +1541,8 @@
               </span>
             </figure>
             <div class="post-header">
-              <h2 class="post-title h3 fs-18"><a href="./shop-product.html" class="link-dark fw-normal">Nike Air Sneakers</a>
+              <h2 class="post-title h3 fs-16"><a href="./shop-product.html" class="link-dark fw-light">Nike Air
+                  Sneakers</a>
               </h2>
               <div class="post-category fw-normal">Shoes</div>
               <p class="price fw-bold">
@@ -1472,7 +1562,8 @@
               </span>
             </figure>
             <div class="post-header">
-              <h2 class="post-title h3 fs-18"><a href="./shop-product.html" class="link-dark fw-normal">Nike Air Sneakers</a>
+              <h2 class="post-title h3 fs-16"><a href="./shop-product.html" class="link-dark fw-light">Nike Air
+                  Sneakers</a>
               </h2>
               <div class="post-category fw-normal">Shoes</div>
               <p class="price fw-bold">
@@ -1492,214 +1583,221 @@
   </section>
   <!-- /Рекомендуемые карточки-->
 
-      <!-- Просмотрите больше брендов -->
-      <section class="wrapper bg-light">
-        <div class="container py-5">
-          <div class="row">
-            <div class="d-flex flex-row justify-content-start align-items-center pb-5">
-              <h3 class="mb-0 fw-lighter">Просмотрите больше брендов</h3>
-            </div>
-            <div class="items-row d-flex flex-row w-100 gap-5 pb-2 overflow-scroll">
-              <div class="item p-1">
-                <figure>
-                  <img src="./assets/img/brand/image 34.png" alt="" />
-                </figure>
-              </div>
-  
-              <div class="item p-1">
-                <figure>
-                  <img src="./assets/img/brand/image 35.png" alt="" />
-                  </span>
-                </figure>
-              </div>
-  
-              <div class="item p-1">
-                <figure>
-                  <img src="./assets/img/brand/image 36.png" alt="" />
-                  </span>
-                </figure>
-              </div>
-  
-              <div class="item p-1">
-                <figure>
-                  <img src="./assets/img/brand/image 37.png" alt="" />
-                  </span>
-                </figure>
-              </div>
-  
-              <div class="item p-1">
-                <figure>
-                  <img src="./assets/img/brand/image 38.png" alt="" />
-                  </span>
-                </figure>
-              </div>
-            </div>
-          </div>
+  <!-- Просмотрите больше брендов -->
+  <section class="wrapper bg-light">
+    <div class="container py-5">
+      <div class="row">
+        <div class="d-flex flex-row justify-content-start align-items-center pb-5">
+          <h3 class="mb-0 fw-lighter">Просмотрите больше брендов</h3>
         </div>
-        <!-- /.container -->
-      </section>
-      <!-- /Просмотрите больше брендов -->
-    </div>
-  
-    <!-- Горячие кирпичи-->
-    <section class="wrapper bg-light">
-      <div class="container pt-5 pb-3">
-        <div class="row">
-          <div class="d-flex flex-row justify-content-between align-items-center pb-3">
-            <h3 class="mb-0 fw-lighter">Горячие кирпичи</h3>
-            <div class="d-flex align-items-center gap-2">
-              <a class="text-dark" href="#">Посмотреть все </a>
-              <i class="uil uil-angle-right-b fs-26"></i>
-            </div>
+        <div class="items-row d-flex flex-row w-100 gap-5 pb-2 overflow-scroll">
+          <div class="item p-1">
+            <figure>
+              <img src="./assets/img/brand/image 34.png" alt="" />
+            </figure>
           </div>
-          <div class="items-row d-flex flex-row w-100 gap-5 pb-2 overflow-scroll">
-            <div class="item border p-1 itemBorderColor">
-              <figure class="rounded mb-6 figure-height">
-                <img src="./assets/img/product/image 1.png" alt="" />
-                <span class="avatar text-black w-5 h-5 position-absolute text-uppercase" style="top: 5px; right: 5px"><i
-                    class="uil uil-heart fs-26"></i>
-                </span>
-              </figure>
-              <div class="post-header">
-                <h2 class="post-title h3 fs-18"><a href="./shop-product.html" class="link-dark fw-normal">Nike Air Sneakers</a>
-                </h2>
-                <div class="post-category fw-normal">Shoes</div>
-                <p class="price fw-bold">
-                  <span class="amount text-dark">$39.49</span>
-                  <del>
-                    <span class="amount">$78.66</span>
-                  </del>
-                </p>
-              </div>
-              <!-- /.post-header -->
-            </div>
-            <div class="item border p-1 itemBorderColor">
-              <figure class="rounded mb-6 figure-height">
-                <img src="./assets/img/product/image 1.png" alt="" />
-                <span class="avatar text-black w-5 h-5 position-absolute text-uppercase" style="top: 5px; right: 5px"><i
-                    class="uil uil-heart fs-26"></i>
-                </span>
-              </figure>
-              <div class="post-header">
-                <h2 class="post-title h3 fs-18"><a href="./shop-product.html" class="link-dark fw-normal">Nike Air Sneakers</a>
-                </h2>
-                <div class="post-category fw-normal">Shoes</div>
-                <p class="price fw-bold">
-                  <span class="amount text-dark">$39.49</span>
-                  <del>
-                    <span class="amount">$78.66</span>
-                  </del>
-                </p>
-              </div>
-              <!-- /.post-header -->
-            </div>
-            <div class="item border p-1 itemBorderColor">
-              <figure class="rounded mb-6 figure-height">
-                <img src="./assets/img/product/image 1.png" alt="" />
-                <span class="avatar text-black w-5 h-5 position-absolute text-uppercase" style="top: 5px; right: 5px"><i
-                    class="uil uil-heart fs-26"></i>
-                </span>
-              </figure>
-              <div class="post-header">
-                <h2 class="post-title h3 fs-18"><a href="./shop-product.html" class="link-dark fw-normal">Nike Air Sneakers</a>
-                </h2>
-                <div class="post-category fw-normal">Shoes</div>
-                <p class="price fw-bold">
-                  <span class="amount text-dark">$39.49</span>
-                  <del>
-                    <span class="amount">$78.66</span>
-                  </del>
-                </p>
-              </div>
-              <!-- /.post-header -->
-            </div>
-            <div class="item border p-1 itemBorderColor">
-              <figure class="rounded mb-6 figure-height">
-                <img src="./assets/img/product/image 1.png" alt="" />
-                <span class="avatar text-black w-5 h-5 position-absolute text-uppercase" style="top: 5px; right: 5px"><i
-                    class="uil uil-heart fs-26"></i>
-                </span>
-              </figure>
-              <div class="post-header">
-                <h2 class="post-title h3 fs-18"><a href="./shop-product.html" class="link-dark fw-normal">Nike Air Sneakers</a>
-                </h2>
-                <div class="post-category fw-normal">Shoes</div>
-                <p class="price fw-bold">
-                  <span class="amount text-dark">$39.49</span>
-                  <del>
-                    <span class="amount">$78.66</span>
-                  </del>
-                </p>
-              </div>
-              <!-- /.post-header -->
-            </div>
-            <div class="item border p-1 itemBorderColor">
-              <figure class="rounded mb-6 figure-height">
-                <img src="./assets/img/product/image 1.png" alt="" />
-                <span class="avatar text-black w-5 h-5 position-absolute text-uppercase" style="top: 5px; right: 5px"><i
-                    class="uil uil-heart fs-26"></i>
-                </span>
-              </figure>
-              <div class="post-header">
-                <h2 class="post-title h3 fs-18"><a href="./shop-product.html" class="link-dark fw-normal">Nike Air Sneakers</a>
-                </h2>
-                <div class="post-category fw-normal">Shoes</div>
-                <p class="price fw-bold">
-                  <span class="amount text-dark">$39.49</span>
-                  <del>
-                    <span class="amount">$78.66</span>
-                  </del>
-                </p>
-              </div>
-              <!-- /.post-header -->
-            </div>
-            <div class="item border p-1 itemBorderColor">
-              <figure class="rounded mb-6 figure-height">
-                <img src="./assets/img/product/image 1.png" alt="" />
-                <span class="avatar text-black w-5 h-5 position-absolute text-uppercase" style="top: 5px; right: 5px"><i
-                    class="uil uil-heart fs-26"></i>
-                </span>
-              </figure>
-              <div class="post-header">
-                <h2 class="post-title h3 fs-18"><a href="./shop-product.html" class="link-dark fw-normal">Nike Air Sneakers</a>
-                </h2>
-                <div class="post-category fw-normal">Shoes</div>
-                <p class="price fw-bold">
-                  <span class="amount text-dark">$39.49</span>
-                  <del>
-                    <span class="amount">$78.66</span>
-                  </del>
-                </p>
-              </div>
-              <!-- /.post-header -->
-            </div>
-            <div class="item border p-1 itemBorderColor">
-              <figure class="rounded mb-6 figure-height">
-                <img src="./assets/img/product/image 1.png" alt="" />
-                <span class="avatar text-black w-5 h-5 position-absolute text-uppercase" style="top: 5px; right: 5px"><i
-                    class="uil uil-heart fs-26"></i>
-                </span>
-              </figure>
-              <div class="post-header">
-                <h2 class="post-title h3 fs-18"><a href="./shop-product.html" class="link-dark fw-normal">Nike Air Sneakers</a>
-                </h2>
-                <div class="post-category fw-normal">Shoes</div>
-                <p class="price fw-bold">
-                  <span class="amount text-dark">$39.49</span>
-                  <del>
-                    <span class="amount">$78.66</span>
-                  </del>
-                </p>
-              </div>
-              <!-- /.post-header -->
-            </div>
-  
+
+          <div class="item p-1">
+            <figure>
+              <img src="./assets/img/brand/image 35.png" alt="" />
+              </span>
+            </figure>
+          </div>
+
+          <div class="item p-1">
+            <figure>
+              <img src="./assets/img/brand/image 36.png" alt="" />
+              </span>
+            </figure>
+          </div>
+
+          <div class="item p-1">
+            <figure>
+              <img src="./assets/img/brand/image 37.png" alt="" />
+              </span>
+            </figure>
+          </div>
+
+          <div class="item p-1">
+            <figure>
+              <img src="./assets/img/brand/image 38.png" alt="" />
+              </span>
+            </figure>
           </div>
         </div>
       </div>
-      <!-- /.container -->
-    </section>
-    <!-- /Горячие кирпичи-->
+    </div>
+    <!-- /.container -->
+  </section>
+  <!-- /Просмотрите больше брендов -->
+  </div>
+
+  <!-- Горячие кирпичи-->
+  <section class="wrapper bg-light">
+    <div class="container pt-5 pb-3">
+      <div class="row">
+        <div class="d-flex flex-row justify-content-between align-items-center pb-3">
+          <h3 class="mb-0 fw-lighter">Горячие кирпичи</h3>
+          <div class="d-flex align-items-center gap-2">
+            <a class="text-dark" href="#">Посмотреть все </a>
+            <i class="uil uil-angle-right-b fs-26"></i>
+          </div>
+        </div>
+        <div class="items-row d-flex flex-row w-100 gap-5 pb-2 overflow-scroll">
+          <div class="item border p-1 itemBorderColor">
+            <figure class="rounded mb-6 figure-height">
+              <img src="./assets/img/product/image 1.png" alt="" />
+              <span class="avatar text-black w-5 h-5 position-absolute text-uppercase" style="top: 5px; right: 5px"><i
+                  class="uil uil-heart fs-26"></i>
+              </span>
+            </figure>
+            <div class="post-header">
+              <h2 class="post-title h3 fs-16"><a href="./shop-product.html" class="link-dark fw-light">Nike Air
+                  Sneakers</a>
+              </h2>
+              <div class="post-category fw-normal">Shoes</div>
+              <p class="price fw-bold">
+                <span class="amount text-dark">$39.49</span>
+                <del>
+                  <span class="amount">$78.66</span>
+                </del>
+              </p>
+            </div>
+            <!-- /.post-header -->
+          </div>
+          <div class="item border p-1 itemBorderColor">
+            <figure class="rounded mb-6 figure-height">
+              <img src="./assets/img/product/image 1.png" alt="" />
+              <span class="avatar text-black w-5 h-5 position-absolute text-uppercase" style="top: 5px; right: 5px"><i
+                  class="uil uil-heart fs-26"></i>
+              </span>
+            </figure>
+            <div class="post-header">
+              <h2 class="post-title h3 fs-16"><a href="./shop-product.html" class="link-dark fw-light">Nike Air
+                  Sneakers</a>
+              </h2>
+              <div class="post-category fw-normal">Shoes</div>
+              <p class="price fw-bold">
+                <span class="amount text-dark">$39.49</span>
+                <del>
+                  <span class="amount">$78.66</span>
+                </del>
+              </p>
+            </div>
+            <!-- /.post-header -->
+          </div>
+          <div class="item border p-1 itemBorderColor">
+            <figure class="rounded mb-6 figure-height">
+              <img src="./assets/img/product/image 1.png" alt="" />
+              <span class="avatar text-black w-5 h-5 position-absolute text-uppercase" style="top: 5px; right: 5px"><i
+                  class="uil uil-heart fs-26"></i>
+              </span>
+            </figure>
+            <div class="post-header">
+              <h2 class="post-title h3 fs-16"><a href="./shop-product.html" class="link-dark fw-light">Nike Air
+                  Sneakers</a>
+              </h2>
+              <div class="post-category fw-normal">Shoes</div>
+              <p class="price fw-bold">
+                <span class="amount text-dark">$39.49</span>
+                <del>
+                  <span class="amount">$78.66</span>
+                </del>
+              </p>
+            </div>
+            <!-- /.post-header -->
+          </div>
+          <div class="item border p-1 itemBorderColor">
+            <figure class="rounded mb-6 figure-height">
+              <img src="./assets/img/product/image 1.png" alt="" />
+              <span class="avatar text-black w-5 h-5 position-absolute text-uppercase" style="top: 5px; right: 5px"><i
+                  class="uil uil-heart fs-26"></i>
+              </span>
+            </figure>
+            <div class="post-header">
+              <h2 class="post-title h3 fs-16"><a href="./shop-product.html" class="link-dark fw-light">Nike Air
+                  Sneakers</a>
+              </h2>
+              <div class="post-category fw-normal">Shoes</div>
+              <p class="price fw-bold">
+                <span class="amount text-dark">$39.49</span>
+                <del>
+                  <span class="amount">$78.66</span>
+                </del>
+              </p>
+            </div>
+            <!-- /.post-header -->
+          </div>
+          <div class="item border p-1 itemBorderColor">
+            <figure class="rounded mb-6 figure-height">
+              <img src="./assets/img/product/image 1.png" alt="" />
+              <span class="avatar text-black w-5 h-5 position-absolute text-uppercase" style="top: 5px; right: 5px"><i
+                  class="uil uil-heart fs-26"></i>
+              </span>
+            </figure>
+            <div class="post-header">
+              <h2 class="post-title h3 fs-16"><a href="./shop-product.html" class="link-dark fw-light">Nike Air
+                  Sneakers</a>
+              </h2>
+              <div class="post-category fw-normal">Shoes</div>
+              <p class="price fw-bold">
+                <span class="amount text-dark">$39.49</span>
+                <del>
+                  <span class="amount">$78.66</span>
+                </del>
+              </p>
+            </div>
+            <!-- /.post-header -->
+          </div>
+          <div class="item border p-1 itemBorderColor">
+            <figure class="rounded mb-6 figure-height">
+              <img src="./assets/img/product/image 1.png" alt="" />
+              <span class="avatar text-black w-5 h-5 position-absolute text-uppercase" style="top: 5px; right: 5px"><i
+                  class="uil uil-heart fs-26"></i>
+              </span>
+            </figure>
+            <div class="post-header">
+              <h2 class="post-title h3 fs-16"><a href="./shop-product.html" class="link-dark fw-light">Nike Air
+                  Sneakers</a>
+              </h2>
+              <div class="post-category fw-normal">Shoes</div>
+              <p class="price fw-bold">
+                <span class="amount text-dark">$39.49</span>
+                <del>
+                  <span class="amount">$78.66</span>
+                </del>
+              </p>
+            </div>
+            <!-- /.post-header -->
+          </div>
+          <div class="item border p-1 itemBorderColor">
+            <figure class="rounded mb-6 figure-height">
+              <img src="./assets/img/product/image 1.png" alt="" />
+              <span class="avatar text-black w-5 h-5 position-absolute text-uppercase" style="top: 5px; right: 5px"><i
+                  class="uil uil-heart fs-26"></i>
+              </span>
+            </figure>
+            <div class="post-header">
+              <h2 class="post-title h3 fs-16"><a href="./shop-product.html" class="link-dark fw-light">Nike Air
+                  Sneakers</a>
+              </h2>
+              <div class="post-category fw-normal">Shoes</div>
+              <p class="price fw-bold">
+                <span class="amount text-dark">$39.49</span>
+                <del>
+                  <span class="amount">$78.66</span>
+                </del>
+              </p>
+            </div>
+            <!-- /.post-header -->
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!-- /.container -->
+  </section>
+  <!-- /Горячие кирпичи-->
 
   <!-- /.content-wrapper -->
 
@@ -1716,8 +1814,8 @@
           <!-- /column -->
           <div class="col-lg-3 offset-lg-2">
             <div class="widget">
-              <div class="d-flex flex-row align-items-center">
-                <h6 class="mb-0">Мы в соц сетях:</h6>
+              <div class="d-flex flex-row align-items-center  justify-content-end">
+                <h6 class="mb-0 fw-normal">Мы в соц сетях:</h6>
                 <nav class="nav social social-muted mb-0 text-md-end">
                   <a href="#"><i class="uil uil-facebook-f fs-22"></i></a>
                   <a href="#"><i class="uil uil-instagram fs-22"></i></a>
@@ -1731,8 +1829,8 @@
           <!-- /column -->
           <div class="col-lg-3">
             <div class="widget">
-              <div class="d-flex flex-row align-items-center">
-                <h6 class="mb-0">Наше приложение:</h6>
+              <div class="d-flex flex-row align-items-center justify-content-end">
+                <h6 class="mb-0 fw-normal">Наше приложение:</h6>
                 <nav class="nav social social-muted mb-0 text-md-end">
                   <a href="#"><i class="uil uil-apple fs-22"></i></a>
                   <a href="#"><i class="uil uil-android fs-22"></i></a>

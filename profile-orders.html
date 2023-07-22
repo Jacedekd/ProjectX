@@ -10,6 +10,7 @@
     <link rel="shortcut icon" href="./assets/img/favicon.png" />
     <link rel="stylesheet" href="./assets/css/plugins.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/ownStyle.css">
     <link rel="stylesheet" href="./assets/css/colors/sky.css" />
   </head>
   <body class="body">
@@ -161,58 +162,58 @@
         <div class="container py-5">
           <div class="row gy-5">
             <aside class="col-lg-3 sidebar">
-              <div class="widget mt-1">
+              <div class="widget mt-3">
                 <div class="d-flex flex-row align-items-center gap-3 mb-3">
                   <h3 class="mb-0">John Doe</h3>
                 </div>
                 <hr class="my-5" />
-                <ul class="nav nav-tabs nav-pills row gy-md-5 gy-sm-0">
-                  <li class="nav-item" role="presentation">
-                    <a class="nav-link" href="#">
-                      <i class="uil uil-shield pe-1"></i>
+                <ul class="nav nav-tabs nav-pills row gy-md-5 gy-sm-0" role="tablist">
+                  <li class="nav-item bg-none" role="presentation">
+                    <a class="nav-link ownProfileLink bg-none active" data-bs-toggle="tab" href="#tab1-1" aria-selected="false" tabindex="-1" role="tab">
+                      <i class="uil uil-shield pe-2"></i>
                       <span>Безопасность</span>
                     </a>
                   </li>
                   <li class="nav-item" role="presentation">
-                    <a class="nav-link active" href="#">
-                      <i class="uil uil-shopping-bag pe-1"></i>
+                    <a class="nav-link ownProfileLink" data-bs-toggle="tab" href="#tab1-2" aria-selected="true" role="tab">
+                      <i class="uil uil-shopping-bag pe-2"></i>
                       <span>Заказы</span>
                     </a>
                   </li>
                   <li class="nav-item" role="presentation">
-                    <a class="nav-link" href="#">
-                      <i class="uil uil-user pe-1"></i>
+                    <a class="nav-link ownProfileLink" data-bs-toggle="tab" href="#tab1-3" aria-selected="false" tabindex="-1" role="tab">
+                      <i class="uil uil-user pe-2"></i>
                       <span>Профиль</span>
                     </a>
                   </li>
 
                   <li class="nav-item" role="presentation">
-                    <a class="nav-link" href="#">
-                      <i class="uil uil-bell pe-1"></i>
+                    <a class="nav-link ownProfileLink" data-bs-toggle="tab" href="#tab1-4" aria-selected="false" tabindex="-1" role="tab">
+                      <i class="uil uil-bell pe-2"></i>
                       <span>Уведомления</span>
                     </a>
                   </li>
                   <li class="nav-item" role="presentation">
-                    <a class="nav-link" href="#">
-                      <i class="uil uil-bag pe-1"></i>
+                    <a class="nav-link ownProfileLink" data-bs-toggle="tab" href="#tab1-5" aria-selected="false" tabindex="-1" role="tab">
+                      <i class="uil uil-bag pe-2"></i>
                       <span>Портфолио</span>
                     </a>
                   </li>
                   <li class="nav-item" role="presentation">
-                    <a class="nav-link" href="#">
-                      <i class="uil uil-heart pe-1"></i>
+                    <a class="nav-link ownProfileLink" data-bs-toggle="tab" href="#tab1-6" aria-selected="false" tabindex="-1" role="tab">
+                      <i class="uil uil-heart pe-2"></i>
                       <span>Избранное</span>
                     </a>
                   </li>
                   <li class="nav-item" role="presentation">
-                    <a class="nav-link" href="#">
-                      <i class="uil uil-setting pe-1"></i>
+                    <a class="nav-link ownProfileLink" data-bs-toggle="tab" href="#tab1-7" aria-selected="false" tabindex="-1" role="tab">
+                      <i class="uil uil-setting pe-2"></i>
                       <span>Настройки</span>
                     </a>
                   </li>
-                  <li class="nav-item" role="presentation">
-                    <a class="nav-link" href="#">
-                      <i class="uil uil-signout pe-1"></i>
+                  <li class="nav-item mb-10" role="presentation">
+                    <a class="nav-link ownProfileLink" href="#">
+                      <i class="uil uil-signout pe-2"></i>
                       <span>Выйти</span>
                     </a>
                   </li>
@@ -222,21 +223,21 @@
             </aside>
             <!-- /column .sidebar -->
             <div class="col-lg-9 order-lg-2">
-              <div class="row align-items-center mb-10 position-relative zindex-1">
+              <div class="row align-items-center mb-10 px-5 position-relative zindex-1">
                 <div class="col">
                   <ul class="nav nav-tabs nav-pills gap-md-5 bg-gray p-2 mb-5">
                     <li class="nav-item">
-                      <a class="nav-link rounded-0 bg-sky text-white active" data-bs-toggle="tab" href="#success">
+                      <a class="nav-link rounded-0 fw-normal bg-sky text-white active" data-bs-toggle="tab" href="#success">
                         <span>Выполнен</span>
                       </a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link rounded-0" data-bs-toggle="tab" href="#processing">
+                      <a class="nav-link rounded-0 fw-normal" data-bs-toggle="tab" href="#processing">
                         <span>В обработке</span>
                       </a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link rounded-0" data-bs-toggle="tab" href="#canceled">
+                      <a class="nav-link rounded-0 fw-normal" data-bs-toggle="tab" href="#canceled">
                         <span>Отменено</span>
                       </a>
                     </li>
@@ -244,7 +245,7 @@
                   <!-- /.nav-tabs -->
                   <div class="tab-content">
                     <div class="tab-pane fade show active" id="success">
-                      <table class="table table-striped">
+                      <table class="table table-striped" style="table-layout: fixed;">
                         <thead>
                           <tr>
                             <th scope="col">ID Заказа</th>
@@ -277,7 +278,7 @@
                     </div>
                     <!--/.tab-pane -->
                     <div class="tab-pane fade" id="processing">
-                      <table class="table table-striped">
+                      <table class="table table-striped" style="table-layout: fixed;">
                         <thead>
                           <tr>
                             <th scope="col">ID Заказа</th>
@@ -310,7 +311,7 @@
                     </div>
                     <!--/.tab-pane -->
                     <div class="tab-pane fade" id="canceled">
-                      <table class="table table-striped">
+                      <table class="table table-striped" style="table-layout: fixed;">
                         <thead>
                           <tr>
                             <th scope="col">ID Заказа</th>
