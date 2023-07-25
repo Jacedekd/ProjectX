@@ -10,6 +10,7 @@
     <link rel="shortcut icon" href="./assets/img/favicon.png" />
     <link rel="stylesheet" href="./assets/css/plugins.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/ownStyle.css">
     <link rel="stylesheet" href="./assets/css/colors/sky.css" />
   </head>
   <body class="body">
@@ -147,38 +148,51 @@
         <!-- /.navbar -->
       </header>
       <!-- /header -->
-      <section class="wrapper">
-        <div class="container py-5">
-          <nav class="d-inline-block" aria-label="breadcrumb">
-            <ol class="breadcrumb mb-0">
-              <li class="breadcrumb-item"><a href="#">Главная</a></li>
-              <li class="breadcrumb-item"><a href="#">Sneakers</a></li>
-              <li class="breadcrumb-item active" aria-current="page">Nike Dunk Low Retro</li>
-            </ol>
-          </nav>
-          <!-- /nav -->
-        </div>
-        <!-- /.container -->
-      </section>
-      <!-- /section -->
+     
       <section class="wrapper bg-light">
         <div class="container py-5">
+          <form class="ownFormPhone">
+            <div class="row ownFormPhone">
+              <div class="col-lg-6 mb-2 mb-lg-0">
+                <div class="form-select-wrapper h-100">
+                  <select class="form-select h-100" aria-label="Default select example">
+                    <option selected>Выберите размер</option>
+                    <option value="38">38</option>
+                    <option value="39">39</option>
+                    <option value="40">40</option>
+                    <option value="41">41</option>
+                    <option value="42">42</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <button class="btn btn-primary btn-icon fw-normal rounded-0 w-100"> Купить<i class="uil uil-shopping-cart fs-22 ps-2"></i> </button>
+              </div>
+              <!-- /column -->
+            </div>
+            <!-- /.row -->
+          </form>
+          <!-- /form -->
+          <div class="post-header py-5">
+            <h2 class="post-title display-5"><a href="./shop-product.html" class="link-dark">Nike Dunk Low Retro</a></h2>
+            <p class="post-category text-dark fs-20 mb-2">Nike</p>
+          </div>
           <div class="row gx-md-8 gx-xl-12 gy-8">
-            <div class="col-lg-6 col-md-7">
+            <div class="col-lg-6 col-md-7 ownPhoneStyle">
               <figure class="rounded">
-                <img src="./assets/img/product/1.png" alt="" style="max-height: 450px" />
+                <img src="./assets/img/1.png" alt="" style="max-height: 450px" />
               </figure>
             </div>
             <!-- /column -->
             <div class="col-lg-6 col-md-5">
               <div class="post-header">
-                <h2 class="post-title display-5"><a href="./shop-product.html" class="link-dark">Nike Dunk Low Retro</a></h2>
-                <p class="post-category text-dark fs-20 mb-2">Nike</p>
+                <h2 class="ownPostHDesktop post-title display-5"><a href="./shop-product.html" class="link-dark">Nike Dunk Low Retro</a></h2>
+                <p class="ownPostHDesktop post-category text-dark fs-20 mb-2">Nike</p>
                 <p class="fw-bold text-dark fs-36 mb-0"><span class="amount">$55.00</span></p>
               </div>
               <!-- /.post-header -->
               <hr class="my-3" />
-              <div>
+              <div class="ownspecificationsDesktop">
                 <h6>Характеристики:</h6>
                 <p class="mb-3"
                   >Артикул: DD1503-103<br />
@@ -188,7 +202,7 @@
                 >
               </div>
               <form>
-                <div class="row">
+                <div class="row ownFormDesktop">
                   <div class="col-lg-6 mb-2 mb-lg-0">
                     <div class="form-select-wrapper h-100">
                       <select class="form-select h-100" aria-label="Default select example">
@@ -218,302 +232,18 @@
       </section>
       <!-- /section -->
 
-      <hr class="container my-3" />
-      <!-- Связанные продукты -->
-      <section class="wrapper bg-light">
-        <div class="container pt-5 pb-3">
-          <div class="row">
-            <div class="d-flex flex-row justify-content-start align-items-center pb-3">
-              <h3 class="mb-0">Связанные продукты</h3>
-            </div>
-            <div class="items-row d-flex flex-row w-100 gap-5 pb-2">
-              <div class="item border border-secondary p-1">
-                <figure class="rounded mb-6 figure-height">
-                  <img src="./assets/img/product/image 1.png" alt="" />
-                  <span class="avatar text-sky h-10 position-absolute text-uppercase" style="top: 0.25rem; right: 0.5rem"
-                    ><i class="uil uil-heart fs-26"></i>
-                  </span>
-                </figure>
-                <div class="post-header">
-                  <h2 class="post-title h3 fs-18"><a href="./shop-product.html" class="link-dark">Nike Air Sneakers</a></h2>
-                  <div class="post-category fw-normal">Shoes</div>
-                  <p class="price fw-bold">
-                    <span class="amount text-dark">$39.49</span>
-                    <del>
-                      <span class="amount">$78.66</span>
-                    </del>
-                  </p>
-                </div>
-                <!-- /.post-header -->
-              </div>
-              <div class="item border border-secondary p-1">
-                <figure class="rounded mb-6 figure-height">
-                  <img src="./assets/img/product/image 1.png" alt="" />
-                  <span class="avatar text-sky h-10 position-absolute text-uppercase" style="top: 0.25rem; right: 0.5rem"
-                    ><i class="uil uil-heart fs-26"></i>
-                  </span>
-                </figure>
-                <div class="post-header">
-                  <h2 class="post-title h3 fs-18"><a href="./shop-product.html" class="link-dark">Nike Air Sneakers</a></h2>
-                  <div class="post-category fw-normal">Shoes</div>
-                  <p class="price fw-bold">
-                    <span class="amount text-dark">$39.49</span>
-                    <del>
-                      <span class="amount">$78.66</span>
-                    </del>
-                  </p>
-                </div>
-                <!-- /.post-header -->
-              </div>
-              <div class="item border border-secondary p-1">
-                <figure class="rounded mb-6 figure-height">
-                  <img src="./assets/img/product/image 1.png" alt="" />
-                  <span class="avatar text-sky h-10 position-absolute text-uppercase" style="top: 0.25rem; right: 0.5rem"
-                    ><i class="uil uil-heart fs-26"></i>
-                  </span>
-                </figure>
-                <div class="post-header">
-                  <h2 class="post-title h3 fs-18"><a href="./shop-product.html" class="link-dark">Nike Air Sneakers</a></h2>
-                  <div class="post-category fw-normal">Shoes</div>
-                  <p class="price fw-bold">
-                    <span class="amount text-dark">$39.49</span>
-                    <del>
-                      <span class="amount">$78.66</span>
-                    </del>
-                  </p>
-                </div>
-                <!-- /.post-header -->
-              </div>
-              <div class="item border border-secondary p-1">
-                <figure class="rounded mb-6 figure-height">
-                  <img src="./assets/img/product/image 1.png" alt="" />
-                  <span class="avatar text-sky h-10 position-absolute text-uppercase" style="top: 0.25rem; right: 0.5rem"
-                    ><i class="uil uil-heart fs-26"></i>
-                  </span>
-                </figure>
-                <div class="post-header">
-                  <h2 class="post-title h3 fs-18"><a href="./shop-product.html" class="link-dark">Nike Air Sneakers</a></h2>
-                  <div class="post-category fw-normal">Shoes</div>
-                  <p class="price fw-bold">
-                    <span class="amount text-dark">$39.49</span>
-                    <del>
-                      <span class="amount">$78.66</span>
-                    </del>
-                  </p>
-                </div>
-                <!-- /.post-header -->
-              </div>
-              <div class="item border border-secondary p-1">
-                <figure class="rounded mb-6 figure-height">
-                  <img src="./assets/img/product/image 1.png" alt="" />
-                  <span class="avatar text-sky h-10 position-absolute text-uppercase" style="top: 0.25rem; right: 0.5rem"
-                    ><i class="uil uil-heart fs-26"></i>
-                  </span>
-                </figure>
-                <div class="post-header">
-                  <h2 class="post-title h3 fs-18"><a href="./shop-product.html" class="link-dark">Nike Air Sneakers</a></h2>
-                  <div class="post-category fw-normal">Shoes</div>
-                  <p class="price fw-bold">
-                    <span class="amount text-dark">$39.49</span>
-                    <del>
-                      <span class="amount">$78.66</span>
-                    </del>
-                  </p>
-                </div>
-                <!-- /.post-header -->
-              </div>
-              <div class="item border border-secondary p-1">
-                <figure class="rounded mb-6 figure-height">
-                  <img src="./assets/img/product/image 1.png" alt="" />
-                  <span class="avatar text-sky h-10 position-absolute text-uppercase" style="top: 0.25rem; right: 0.5rem"
-                    ><i class="uil uil-heart fs-26"></i>
-                  </span>
-                </figure>
-                <div class="post-header">
-                  <h2 class="post-title h3 fs-18"><a href="./shop-product.html" class="link-dark">Nike Air Sneakers</a></h2>
-                  <div class="post-category fw-normal">Shoes</div>
-                  <p class="price fw-bold">
-                    <span class="amount text-dark">$39.49</span>
-                    <del>
-                      <span class="amount">$78.66</span>
-                    </del>
-                  </p>
-                </div>
-                <!-- /.post-header -->
-              </div>
-              <div class="item border border-secondary p-1">
-                <figure class="rounded mb-6 figure-height">
-                  <img src="./assets/img/product/image 1.png" alt="" />
-                  <span class="avatar text-sky h-10 position-absolute text-uppercase" style="top: 0.25rem; right: 0.5rem"
-                    ><i class="uil uil-heart fs-26"></i>
-                  </span>
-                </figure>
-                <div class="post-header">
-                  <h2 class="post-title h3 fs-18"><a href="./shop-product.html" class="link-dark">Nike Air Sneakers</a></h2>
-                  <div class="post-category fw-normal">Shoes</div>
-                  <p class="price fw-bold">
-                    <span class="amount text-dark">$39.49</span>
-                    <del>
-                      <span class="amount">$78.66</span>
-                    </del>
-                  </p>
-                </div>
-                <!-- /.post-header -->
-              </div>
-            </div>
-          </div>
+      <div class="container ownspecificationsPhone">
+        <div>
+          <h6>Характеристики:</h6>
+          <p class="mb-3"
+            >Артикул: DD1503-103<br />
+            Цвет: WHITE/PHOTON DUST-WHITE<br />
+            Статус: В наличии<br />
+            Дата выпуска: 05/19/2021.</p
+          >
         </div>
-        <!-- /.container -->
-      </section>
-      <!-- /Связанные продукты -->
-      <hr class="container my-3" />
-      <!-- Недавно просмотренные -->
-      <section class="wrapper bg-light">
-        <div class="container pt-5 pb-3">
-          <div class="row">
-            <div class="d-flex flex-row justify-content-start align-items-center pb-3">
-              <h3 class="mb-0">Недавно просмотренные</h3>
-            </div>
-            <div class="items-row d-flex flex-row w-100 gap-5 pb-2">
-              <div class="item border border-secondary p-1">
-                <figure class="rounded mb-6 figure-height">
-                  <img src="./assets/img/product/image 1.png" alt="" />
-                  <span class="avatar text-sky h-10 position-absolute text-uppercase" style="top: 0.25rem; right: 0.5rem"
-                    ><i class="uil uil-heart fs-26"></i>
-                  </span>
-                </figure>
-                <div class="post-header">
-                  <h2 class="post-title h3 fs-18"><a href="./shop-product.html" class="link-dark">Nike Air Sneakers</a></h2>
-                  <div class="post-category fw-normal">Shoes</div>
-                  <p class="price fw-bold">
-                    <span class="amount text-dark">$39.49</span>
-                    <del>
-                      <span class="amount">$78.66</span>
-                    </del>
-                  </p>
-                </div>
-                <!-- /.post-header -->
-              </div>
-              <div class="item border border-secondary p-1">
-                <figure class="rounded mb-6 figure-height">
-                  <img src="./assets/img/product/image 1.png" alt="" />
-                  <span class="avatar text-sky h-10 position-absolute text-uppercase" style="top: 0.25rem; right: 0.5rem"
-                    ><i class="uil uil-heart fs-26"></i>
-                  </span>
-                </figure>
-                <div class="post-header">
-                  <h2 class="post-title h3 fs-18"><a href="./shop-product.html" class="link-dark">Nike Air Sneakers</a></h2>
-                  <div class="post-category fw-normal">Shoes</div>
-                  <p class="price fw-bold">
-                    <span class="amount text-dark">$39.49</span>
-                    <del>
-                      <span class="amount">$78.66</span>
-                    </del>
-                  </p>
-                </div>
-                <!-- /.post-header -->
-              </div>
-              <div class="item border border-secondary p-1">
-                <figure class="rounded mb-6 figure-height">
-                  <img src="./assets/img/product/image 1.png" alt="" />
-                  <span class="avatar text-sky h-10 position-absolute text-uppercase" style="top: 0.25rem; right: 0.5rem"
-                    ><i class="uil uil-heart fs-26"></i>
-                  </span>
-                </figure>
-                <div class="post-header">
-                  <h2 class="post-title h3 fs-18"><a href="./shop-product.html" class="link-dark">Nike Air Sneakers</a></h2>
-                  <div class="post-category fw-normal">Shoes</div>
-                  <p class="price fw-bold">
-                    <span class="amount text-dark">$39.49</span>
-                    <del>
-                      <span class="amount">$78.66</span>
-                    </del>
-                  </p>
-                </div>
-                <!-- /.post-header -->
-              </div>
-              <div class="item border border-secondary p-1">
-                <figure class="rounded mb-6 figure-height">
-                  <img src="./assets/img/product/image 1.png" alt="" />
-                  <span class="avatar text-sky h-10 position-absolute text-uppercase" style="top: 0.25rem; right: 0.5rem"
-                    ><i class="uil uil-heart fs-26"></i>
-                  </span>
-                </figure>
-                <div class="post-header">
-                  <h2 class="post-title h3 fs-18"><a href="./shop-product.html" class="link-dark">Nike Air Sneakers</a></h2>
-                  <div class="post-category fw-normal">Shoes</div>
-                  <p class="price fw-bold">
-                    <span class="amount text-dark">$39.49</span>
-                    <del>
-                      <span class="amount">$78.66</span>
-                    </del>
-                  </p>
-                </div>
-                <!-- /.post-header -->
-              </div>
-              <div class="item border border-secondary p-1">
-                <figure class="rounded mb-6 figure-height">
-                  <img src="./assets/img/product/image 1.png" alt="" />
-                  <span class="avatar text-sky h-10 position-absolute text-uppercase" style="top: 0.25rem; right: 0.5rem"
-                    ><i class="uil uil-heart fs-26"></i>
-                  </span>
-                </figure>
-                <div class="post-header">
-                  <h2 class="post-title h3 fs-18"><a href="./shop-product.html" class="link-dark">Nike Air Sneakers</a></h2>
-                  <div class="post-category fw-normal">Shoes</div>
-                  <p class="price fw-bold">
-                    <span class="amount text-dark">$39.49</span>
-                    <del>
-                      <span class="amount">$78.66</span>
-                    </del>
-                  </p>
-                </div>
-                <!-- /.post-header -->
-              </div>
-              <div class="item border border-secondary p-1">
-                <figure class="rounded mb-6 figure-height">
-                  <img src="./assets/img/product/image 1.png" alt="" />
-                  <span class="avatar text-sky h-10 position-absolute text-uppercase" style="top: 0.25rem; right: 0.5rem"
-                    ><i class="uil uil-heart fs-26"></i>
-                  </span>
-                </figure>
-                <div class="post-header">
-                  <h2 class="post-title h3 fs-18"><a href="./shop-product.html" class="link-dark">Nike Air Sneakers</a></h2>
-                  <div class="post-category fw-normal">Shoes</div>
-                  <p class="price fw-bold">
-                    <span class="amount text-dark">$39.49</span>
-                    <del>
-                      <span class="amount">$78.66</span>
-                    </del>
-                  </p>
-                </div>
-                <!-- /.post-header -->
-              </div>
-              <div class="item border border-secondary p-1">
-                <figure class="rounded mb-6 figure-height">
-                  <img src="./assets/img/product/image 1.png" alt="" />
-                  <span class="avatar text-sky h-10 position-absolute text-uppercase" style="top: 0.25rem; right: 0.5rem"
-                    ><i class="uil uil-heart fs-26"></i>
-                  </span>
-                </figure>
-                <div class="post-header">
-                  <h2 class="post-title h3 fs-18"><a href="./shop-product.html" class="link-dark">Nike Air Sneakers</a></h2>
-                  <div class="post-category fw-normal">Shoes</div>
-                  <p class="price fw-bold">
-                    <span class="amount text-dark">$39.49</span>
-                    <del>
-                      <span class="amount">$78.66</span>
-                    </del>
-                  </p>
-                </div>
-                <!-- /.post-header -->
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- /.container -->
-      </section>
-      <!-- /Недавно просмотренные -->
+      </div>
+      
     </div>
     <!-- /.content-wrapper -->
     <footer class="bg-light">

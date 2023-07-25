@@ -75,12 +75,6 @@
     display: none;
 }
 
-@media (max-width: 991px) {
-    .ownNavbarToggle {
-        display: block;
-    }
-}
-
 .price {
     position: absolute;
     bottom: 20px;
@@ -115,4 +109,74 @@
 .ownDropGroup span {
     font-size: 12px;
     line-height: initial;
+}
+
+@media (max-width: 991px) {
+    .ownNavbarToggle {
+        display: block;
+    }
+}
+
+@media (max-width: 1399px) {
+    .searchMain {
+        max-width: 600px;
+        padding: 0 10px 0 10px !important;
+    }
+}
+
+@media (max-width: 1199px) {
+    .searchMain {
+        max-width: 500px;
+    }
+}
+
+@media (max-width: 991px) {
+    .ownNavbar {
+        display: none;
+    }
+}
+
+.ownFormPhone {
+    display: none;
+}
+.ownspecificationsPhone {
+    display: none;
+}
+@media (max-width: 991px) {
+    .ownDropdown {
+        display: flex;
+        flex-direction: column;
+}
+}
+@media (max-width: 767px) {
+    .ownFormPhone {
+        display: block;
+    }
+    .ownFormDesktop {
+        display: none;
+    }
+    .ownPostHDesktop {
+        display: none;
+    }
+    .ownspecificationsPhone {
+        display: block;
+    }
+    .ownspecificationsDesktop {
+        display: none;
+    }
+    .ownFooter {
+        display: flex;
+        flex-direction: column !important;
+    }
+    .ownFooterMain {
+        align-items: start !important;
+    }
+    .ownPhoneStyle {
+        margin: 0;
+    }
+}
+
+.ownShop2Card {
+    width: 190px;
+    height: 250px;
 }
